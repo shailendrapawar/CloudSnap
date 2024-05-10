@@ -1,77 +1,62 @@
-.nav-body{
-    height: 65px;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0px;
+.nav-body {
+  height: 65px;
 }
-.nav-items{
-    width: 60%;
-    max-width: 600px;
+
+.nav-items {
+  width: 60%;
+  max-width: 600px;
 }
-a{
-    width: 100px;
+a {
+  width: 100px;
   text-align: center;
   border-bottom: 3px solid transparent;
 }
-.logo-icon{
-    background-image: url("./happy-cloud.png");
-    background-size: contain;
-    background-position: center;
+.logo-icon {
+  background-image: url("./happy-cloud.png");
 }
-.menu-icon{
+.menu-icon {
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  transition: 0.1s ease-in-out;
+  border-bottom: 3px solid blue;
+}
+.nav-2-body {
+  height: 90vh;
+  width: 60%;
+  top: 65px;
+  right: 0px;
+  display: none;
+  z-index: 10;
+  transition: 0.3 ease-in-out;
+  animation: 0.3s menuLoading linear;
+}
+.nav-2-items {
+  height: 50%;
+  z-index: 10;
+}
+
+@keyframes menuLoading {
+  0% {
+    opacity: 0%;
+    translate: 100px;
+  }
+  100% {
+    opacity: 100%;
+    translate: 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .profile-icon {
     display: none;
-    transition: 0.3s ease-in-out;
-}
-
-.active{
-    transition: 0.1s ease-in-out;
-    border-bottom: 3px solid blue;
-}
-.nav-2-body{
-    height: 90vh;
-    width: 60%;
-    position: absolute;
-    top: 65px;
-    right: 0px;
+  }
+  .nav-items {
     display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    z-index: 10;
-    transition: 0.3 ease-in-out;
-    animation:  0.3s menuLoading linear;
-    
-}
-.nav-2-items{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50%;
-    z-index: 10;
-}
-
-@keyframes menuLoading{
-    0%{
-        opacity: 0%;
-        translate: 100px;
-    }
-    100%{
-        opacity: 100%;
-        translate: 0px;
-    }
-}
-
-@media  screen and (max-width:560px) {
-    
-    .profile-icon{
-        display: none;
-    }
-    .nav-items{
-        display: none;
-    }
-    .menu-icon{
-        display: block;
-    }
+  }
+  .menu-icon {
+    display: block;
+  }
 }

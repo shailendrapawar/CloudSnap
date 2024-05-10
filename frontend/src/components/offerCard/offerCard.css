@@ -4,34 +4,22 @@
   max-width: 400px;
   min-width: 290px;
   border: 1px solid rgb(172, 172, 172);
-  background-size: cover;
-  color: white;
-  cursor: pointer;
 }
 .desc-body{
     height: 100%;
     width: 100%;
-   display: flex;
-   padding: 10px;
-  flex-direction: column;
-  justify-content: space-around;
   transition: 0.2s ease-in-out;
 }
 .offer-card-body p {
-  text-align: center;
   height: 60%;
   display: none;
   font-size: 1.2rem;
-  overflow: hidden;
-  width: auto;
 }
 .offer-card-body h2 {
   height: 15%;
   font-weight: 600;
   display: none;
   font-size: 1.5rem;
-  text-align: center;
-  text-decoration: underline;
 }
 .offer-card-body:hover {
   #offerCard-para,
