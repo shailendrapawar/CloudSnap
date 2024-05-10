@@ -83,9 +83,9 @@ const Home = () => {
       </div>
 
 
-      <div className='whatWeOffer-body'>
-        <h1>What we offer</h1>
-        <div className='whatWeOffer-block'>
+      <div className='whatWeOffer-body h-auto pt-5 flex flex-col gap-5 pb-5 items-center'>
+        <h1 className=' text-center text-white'>What we offer</h1>
+        <div className='whatWeOffer-block flex justify-evenly flex-wrap gap-2.5'>
         {
           cardData.map((v,i)=>{
             return <OfferCard key={i} data={v}/>
@@ -95,9 +95,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='review-body'>
-      <h2>People connected with US...</h2>
-      <main className='review-block'>
+      <div className='review-body flex flex-col justify-evenly items-center'>
+      <h2 className='text-center  text-white'>People connected with US...</h2>
+      <main className='review-block flex justify-evenly items-center scroll-smooth'>
       {reviewData.map((v,i)=>{
         return <ReviewCard key={i} data={v}/>
       })}
