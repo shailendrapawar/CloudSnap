@@ -14,30 +14,21 @@
     filter: drop-shadow(10px 10px 10px black);
 }
 .get-started-body{
-    height: auto;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    min-height: 500px;
     background-color: #EEEBDD;
 }
 .get-started-body h2{
     font-size: 2rem;
-    text-align: center;
     font-weight: 600;
     background-color: #145374;
     width: 60%;
     min-width: 300px;
-    color: white;
 }
 .get-started-block{
     width: 95%;
     max-width: 1000px;
     height: 95%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
+
 }
 .get-started-block img{
     width: 50%;
@@ -45,11 +36,6 @@
 }
 .get-started-desc{
     background-color:#76ABAE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
-    color: white;
 }
 .get-started-desc h1{
     font-size: 2rem;

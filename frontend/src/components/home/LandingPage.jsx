@@ -17,11 +17,14 @@ const LandingPage = () => {
         10: "Join the Image Revolution, Start Here."
       };
 
-
+      const random=()=>{
+        const random=Math.floor(Math.random()*10)
+        return slogans[random]
+      }
   return (
     <main className='landing-body bg-cover bg-center flex items-center justify-center'>
       <section className='landing-block flex justify-start items-end'>
-         <h1 className=' text-white'>{slogans[1]}</h1>
+         <h1 className=' text-white'>{random()}</h1>
       </section>
     </main>
   )

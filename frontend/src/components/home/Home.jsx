@@ -60,19 +60,19 @@ const Home = () => {
 
 
 
-  
+
   return (
     <div className='home-body h-auto'>
       <LandingPage />
       <div className=' h-5 bg-black'></div>
 
-      <div className='get-started-body'>
-      <h2 className='text-center font-extrabold h-auto w-full'>Getting Started</h2>
+      <div className='get-started-body h-auto flex flex-col justify-evenly items-center  pt-5 pb-5 gap-5'>
+      <h2 className='font-extrabold h-auto w-full text-center text-white '>Getting Started</h2>
 
-        <figure className='get-started-block'>
+        <figure className='get-started-block flex justify-evenly gap-5'>
           <img src={getStartedImg} className='get-started-img h-full w-full'></img>
 
-          <figcaption className='get-started-desc'>
+          <figcaption className='get-started-desc flex flex-col justify-evenly p-2.5 text-white'>
             <h1 className=' font-semibold'>{getStartedHeading}</h1>
             <p className=' text-slate-200'>{getStartedPara1}</p>
             <p className=' text-slate-200'>{getStartedPara2}</p>
