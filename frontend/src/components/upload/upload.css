@@ -1,0 +1,42 @@
+.upload-body{
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upload-block{
+    background-color: aliceblue;
+    height: 80%;
+    width: 80%;
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 10px 0px 10px;
+}
+.upload-left,.upload-right{
+    width: 50%;
+    height: 300px;
+    max-width: 500px;
+    border: 3px solid #145374 ;
+
+}
+.upload-left{
+    display: grid;
+    place-content: center;
+}
+.upload-left img{
+    width: 200px;
+    height: 200px;
+}
+.upload-btn{
+    background-color: yellow;
+    width: 80%;
+    height: 40px;
+    max-width: 700px;
+    border-radius: 10px;
+}
