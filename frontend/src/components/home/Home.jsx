@@ -11,7 +11,6 @@ const Home = () => {
   const getStartedPara1 = "Your memories, always secure and at your fingertips! Never losing a precious photo again – with us"
   const getStartedPara2 = "From family fun to professional portfolios, our platform makes organizing and accessing your images a breeze. Join us and make your memories last a lifetime!"
 
-
   const reviewData=[
     {
       name:"Shailu pawar",
