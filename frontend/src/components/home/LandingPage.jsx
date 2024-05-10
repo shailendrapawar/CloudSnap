@@ -19,9 +19,9 @@ const LandingPage = () => {
 
 
   return (
-    <main className='landing-body'>
-      <section className='landing-block'>
-         <h1>{slogans[1]}</h1>
+    <main className='landing-body bg-cover bg-center flex items-center justify-center'>
+      <section className='landing-block flex justify-start items-end'>
+         <h1 className=' text-white'>{slogans[1]}</h1>
       </section>
     </main>
   )

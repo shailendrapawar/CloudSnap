@@ -1,27 +1,16 @@
-.home-body{
-    height: auto;
-}
+
 .landing-body{
     height: 91vh;
     background-image: url('./homeAssets/home-banner-2.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     filter: contrast(110%);
 }
 .landing-block{
     width: 90%;
     height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items:flex-end;
 }
 .landing-block h1{
     font-size: 4rem;
     font-weight: 600;
-    color: white;
     filter: drop-shadow(10px 10px 10px black);
 }
 .get-started-body{

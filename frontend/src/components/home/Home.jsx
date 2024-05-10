@@ -56,8 +56,13 @@ const Home = () => {
      img:`url("./better-organization.png")`
     }
   ]
+
+
+
+
+  
   return (
-    <div className='home-body'>
+    <div className='home-body h-auto'>
       <LandingPage />
       <div className=' h-5 bg-black'></div>
 
