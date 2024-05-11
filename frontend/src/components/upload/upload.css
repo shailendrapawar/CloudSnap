@@ -9,8 +9,8 @@
 .upload-block{
     background-color: aliceblue;
     height: 80%;
-    width: 80%;
-    min-width: 300px;
+    width: 95%;
+    min-width: 280px;
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -39,4 +39,23 @@
     height: 40px;
     max-width: 700px;
     border-radius: 10px;
+}
+.upload-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    overflow-y: scroll;
+
+}
+
+@media screen and (max-width:560px){
+    .upload-block{
+        flex-direction: column;
+    }
+    .upload-left{
+        width: 100%;
+    }
+    .upload-right{
+        width: 100%;
+    }
 }
