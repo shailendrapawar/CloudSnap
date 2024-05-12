@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './pages.css'
 
 const LandingPage = () => {
 
 
+  useEffect(()=>{
+    random()
+
+  },[])
     const slogans = {
         1: "Capture Moments, Share Memories...",
         2: "Where Every Pixel Tells a Story.",

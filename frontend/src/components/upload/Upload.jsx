@@ -1,44 +1,48 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './upload.css'
 import src from './icon-final.png'
+import UploadList from './UploadList'
 const Upload = () => {
+  let list;
 
-  const [files,setFiles]=useState([])
+  const [finalList, setFinalList] = useState([])
+  const parent=useRef(null)
 
- const handleChange=(e)=>{
-  e.preventDefault();
+ 
 
-  const inputFiles=Array.from(e.target.files)
-  
-  console.log("input files:-",inputFiles)
-  inputFiles.map((file,i)=>{
-    console.log("map hue",file.name)
+  const handleChange = (e) => {
+    e.preventDefault()
+    const inputFiles = Array.from(e.target.files)
+    list = inputFiles.map((file, i) => {
+      return <UploadList key={i} data={file} index={i} />
+    })
 
-  })
-  inputFiles.splice(2,1)
-  console.log(inputFiles)
- }
-
+    setFinalList(list)
+  }
+  console.log(parent)
 
   return (
     <main className='upload-body'>
-    <section className='upload-block'>
+      <section className='upload-block'>
 
-    <label className="upload-left" >
-      <input type='file' id='file-input' multiple onChange={(e)=>handleChange(e)} accept='image/*' hidden ></input>
-      
-      <img src={src}></img>
-      <p>Click or Drag and Drop image</p>
-    </label>  
+        <label className="upload-left" >
+          <input type='file' id='file-input' multiple onChange={(e) => {handleChange(e)}} accept='image/*' hidden ></input>
 
-    <div className='upload-right'>
-      
-    </div>
+          <img src={src}></img>
+          <p>Click or Drag and Drop image</p>
+        </label>
 
-    </section>
+        <div className='upload-right' id='listBody' ref={parent} >
+          {
+            finalList
+          }
+
+        </div>
+
+      </section>
 
 
-    <button className='upload-btn'>Sanp in cloud</button>
+      <button className='upload-btn'>Sanp in cloud</button>
     </main>
   )
 }
