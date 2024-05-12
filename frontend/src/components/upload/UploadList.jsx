@@ -11,9 +11,7 @@ const UploadList = (prop) => {
         return  true
     }
     const child=useRef()
-   
     const imgUrl=URL.createObjectURL(prop.data);
-    console.log(prop.data.size)
   return (
     <div className='list-body relative'  ref={child} >
      <img className='' src={imgUrl}></img>
