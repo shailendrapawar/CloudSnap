@@ -4,32 +4,52 @@ import src from './icon-final.png'
 import UploadList from './UploadList'
 const Upload = () => {
   let list;
+  let inputFiles;
 
   const [finalList, setFinalList] = useState([])
   const parent=useRef(null)
 
- 
+  useEffect(()=>{
+
+    const dropArea=document.getElementById("upload-left")
+    dropArea.addEventListener("dragover",(e)=>{
+      e.preventDefault()
+    })
+    dropArea.addEventListener("drop",(e)=>{
+      e.preventDefault();
+      inputFiles=Array.from(e.dataTransfer.files)
+      console.log(inputFiles)
+    
+      list = inputFiles.map((file, i) => {
+        return <UploadList key={i} data={file} index={i} />
+      })
+      
+  
+      setFinalList(list)
+      
+    })
+  },[])
+  
 
   const handleChange = (e) => {
     e.preventDefault()
-    const inputFiles = Array.from(e.target.files)
+     inputFiles = Array.from(e.target.files)
     list = inputFiles.map((file, i) => {
       return <UploadList key={i} data={file} index={i} />
     })
 
     setFinalList(list)
   }
-  console.log(parent)
 
   return (
     <main className='upload-body'>
       <section className='upload-block'>
 
-        <label className="upload-left" >
-          <input type='file' id='file-input' multiple onChange={(e) => {handleChange(e)}} accept='image/*' hidden ></input>
+        <label className="upload-left" id='upload-left' >
+          <input type='file' id='file-input' multiple  onChange={(e) => {handleChange(e)}} accept='image/*' hidden ></input>
 
           <img src={src}></img>
-          <p>Click or Drag and Drop image</p>
+          <p className='text-center'>Click Here or <br/> Drag and Drop images</p>
         </label>
 
         <div className='upload-right' id='listBody' ref={parent} >
