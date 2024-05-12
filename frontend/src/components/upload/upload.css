@@ -53,26 +53,14 @@
 
 
 .list-body{
-background-color: #76ABAE;
-height: 80px;
 min-height: 70px;
 width: 100%;
-display: flex;
-align-items: center;
-padding-left: 5px;
-gap: 10px;
-
 }
 .list-body img{
-    background-color: white;
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    background-size: contain;
+border-radius: 50%;
 }
 .list-body p{
     max-height: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
-    
 }
