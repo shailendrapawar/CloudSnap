@@ -24,7 +24,44 @@ const UserProfile = () => {
           <button className='logout-btn'>Sign Out</button>
 
         </div>
-        <div className='user-right'>user irght </div>
+
+
+
+
+
+        <div className='user-right'>
+          <h1>Account Info</h1>
+
+          <div>
+            <label>Name:</label><input></input>
+          </div>
+
+          <div>
+            <label>Email:</label><input></input>
+          </div>
+
+          <div>
+            <section>
+              <label>Gender:</label><input ></input>
+            </section>
+
+            <section>
+              <label>Age:</label><input></input>
+            </section>
+          </div>
+
+          <div>
+            <label>Mobile no:</label><input></input>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
 
       </div>
 
