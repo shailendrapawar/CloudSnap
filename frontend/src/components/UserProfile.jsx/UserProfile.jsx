@@ -32,15 +32,15 @@ const UserProfile = () => {
         <div className='user-right'>
           <h1>Account Info</h1>
 
-          <div>
+          <div className='name-body'>
             <label>Name:</label><input></input>
           </div>
 
-          <div>
+          <div className='email-body'>
             <label>Email:</label><input></input>
           </div>
 
-          <div>
+          <div className='gender-age-body'>
             <section>
               <label>Gender:</label><input ></input>
             </section>
@@ -50,17 +50,14 @@ const UserProfile = () => {
             </section>
           </div>
 
-          <div>
+          <div className='mobileNo-body'>
             <label>Mobile no:</label><input></input>
           </div>
 
+          <button>Update Credentials</button>
         </div>
 
-
-
-
-
-
+        
 
 
       </div>

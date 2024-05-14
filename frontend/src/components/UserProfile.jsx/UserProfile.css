@@ -11,6 +11,7 @@
     height: 80%;
     max-width: 800px;
     display: flex;
+    gap: 20px;
 
 }
 .user-left{
@@ -79,6 +80,23 @@ width: 100%;
 }
 .user-right{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px ;
+    background-color: rgb(199, 198, 198);
+    position: relative;
+}
+.user-right h1{
+    font-size: 2rem;
+}
+.user-right button{
+    width: 50%;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: #222831;
 }
 
 
