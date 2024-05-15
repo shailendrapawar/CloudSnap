@@ -11,23 +11,19 @@ const UserProfile = () => {
           <section className='userLeft-top bg-white flex flex-col justify-between items-center'>
             <img className='userProfile-img bg-slate-400 '></img>
             <div className='profileImg-btn flex justify-center gap-2.5'>
-              <button className='removePic-btn'>Remove photo</button>
+              <button className='removePic-btn bg-white rounded-md'>Remove photo</button>
               <button className='changePic-btn bg-[#222831] text-white rounded-md'>Change photo</button>
             </div>
           </section>
 
-          <section className='userLeft-middle'>
-            <span className='total-snap'><label>Total snaps:</label><b>47</b></span>
-            <span className='credits-body'><label>Credits Used:</label><b>8%</b></span>
+          <section className='userLeft-middle flex items-center justify-evenly'>
+            <span className='total-snap text-white bg-[#0194fe]'><label>Total snaps:</label><b>47</b></span>
+            <span className='credits-body  text-white bg-[#e32f7a]'><label>Credits Used:</label><b>8%</b></span>
           </section>
 
-          <button className='logout-btn'>Sign Out</button>
+          <button className='logout-btn bg-[#ffd600] rounded-md'>Sign Out</button>
 
         </div>
-
-
-
-
 
         <div className='user-right'>
           <h1>Account Info</h1>

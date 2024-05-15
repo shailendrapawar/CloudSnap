@@ -38,9 +38,7 @@
   width: 100%;
 }
 .removePic-btn {
-  background-color: white;
   border: 3px solid #222831;
-  border-radius: 10px;
   width: 50%;
   max-width: 120px;
 }
@@ -50,9 +48,6 @@
 }
 .userLeft-middle {
   height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -66,14 +61,6 @@
   align-items: center;
   border-radius: 10px;
 }
-.total-snap {
-  color: white;
-  background-color: #0194fe;
-}
-.credits-body {
-  color: white;
-  background-color: #e32f7a;
-}
 .userLeft-middle b {
   font-size: 1.7rem;
 }
@@ -81,10 +68,7 @@
 .logout-btn {
   width: 60%;
   height: 40px;
-  border-radius: 10px;
-  /* color: white; */
   max-width: 200px;
-  background-color: #ffd600;
 }
 .user-right {
   width: 60%;
