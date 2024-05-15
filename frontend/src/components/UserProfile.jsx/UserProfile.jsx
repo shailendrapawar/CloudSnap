@@ -2,17 +2,17 @@ import React from 'react'
 import './userProfile.css'
 const UserProfile = () => {
   return (
-    <main className='user-body'>
+    <main className='user-body flex items-center justify-center bg-[#8e9eab]'>
 
-      <div className='user-block'>
+      <div className='user-block  bg-white flex gap-2.5 overflow-hidden'>
 
-        <div className='user-left'>
+        <div className='user-left flex flex-col justify-evenly items-center'>
 
-          <section className='userLeft-top'>
-            <img className='userProfile-img'></img>
-            <div className='profileImg-btn'>
+          <section className='userLeft-top bg-white flex flex-col justify-between items-center'>
+            <img className='userProfile-img bg-slate-400 '></img>
+            <div className='profileImg-btn flex justify-center gap-2.5'>
               <button className='removePic-btn'>Remove photo</button>
-              <button className='changePic-btn'>Change photo</button>
+              <button className='changePic-btn bg-[#222831] text-white rounded-md'>Change photo</button>
             </div>
           </section>
 
