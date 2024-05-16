@@ -110,11 +110,9 @@
     width: 95%;
     flex-direction: column;
     overflow-y: scroll;
-
   }
   .user-block::-webkit-scrollbar{
     display: none;
-
   }
   .user-left{
     width: 100%;
@@ -130,6 +128,7 @@
     width: 100%;
     height: auto;
     gap: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
   .user-right div{
@@ -169,6 +168,7 @@
     height: auto;
     gap: 10px;
     padding-bottom: 10px;
+    padding-top: 20px;
   }
   .user-right div{
     font-size: 1rem;
