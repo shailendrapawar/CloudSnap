@@ -101,3 +101,46 @@
 .user-right label {
   color: rgba(64, 63, 63, 0.849);
 }
+
+
+@media screen and (max-width:600px){
+
+  .user-block{
+    width: 95%;
+    flex-direction: column;
+    overflow-y: scroll;
+
+  }
+  .user-block::-webkit-scrollbar{
+    display: none;
+
+  }
+  .user-left{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 10px 0px 10px 0px ;
+  }
+  .userLeft-top{
+    height: auto;
+    gap: 10px;
+  }
+  /* .userLeft-top button{
+    width: 150px;
+  } */
+  .user-right{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .user-right div{
+    font-size: 0.8rem;
+  }
+  .user-right h1{
+    font-size: 1.6rem;
+  }
+  .user-right button{
+    font-size: 0.8rem;
+  }
+}
