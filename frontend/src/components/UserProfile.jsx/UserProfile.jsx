@@ -25,7 +25,7 @@ const UserProfile = () => {
 
         </div>
 
-        <div className='user-right'>
+        <div className='user-right flex flex-col justify-evenly items-end relative pl-2 pr-2'>
           <h1>Account Info</h1>
 
           <div className='name-body'>
@@ -36,7 +36,7 @@ const UserProfile = () => {
             <label>Email:</label><span>shailendrapawar980@gmail.com</span>
           </div>
 
-          <div className='gender-age-body'>
+          <div className='gender-age-body flex gap-7'>
             <section>
               <label>Gender:</label><span >Male</span>
             </section>
@@ -46,11 +46,11 @@ const UserProfile = () => {
             </section>
           </div>
 
-          <div className='mobileNo-body'>
+          <div className='mobileNo-body '>
             <label>Mobile no:</label><span>7456920792</span>
           </div>
 
-          <button>Update Credentials</button>
+          <button className='bg-[#222831] text-white rounded-md h-10'>Update Credentials</button>
         </div>
 
 
