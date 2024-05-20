@@ -1,0 +1,13 @@
+.gallery-body{
+height: 92vh;
+background-color:antiquewhite;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.gallery-block{
+    width: 90%;
+    background-color: white;
+    height: 95%;
+    position: relative;
+}

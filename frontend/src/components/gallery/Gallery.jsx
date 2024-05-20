@@ -1,8 +1,17 @@
 import React from 'react'
+import './gallery.css'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <main className='gallery-body'>
+      <div className='gallery-block'>
+        phots
+        <nav>
+
+        </nav>
+      </div>
+    </main>
+
   )
 }
 
