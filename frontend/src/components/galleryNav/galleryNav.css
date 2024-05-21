@@ -22,6 +22,7 @@
   height: 30px;
   width: 30px;
 }
-.active {
+.activeClass {
   color: rgb(255, 0, 93);
+  text-decoration: none;  
 }
