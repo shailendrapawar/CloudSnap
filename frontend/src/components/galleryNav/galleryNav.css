@@ -1,0 +1,27 @@
+.gallery-nav {
+  background-color: #00334e;
+  color: white;
+  width: 60px;
+  height: 90%;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  z-index: 2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gallery-nav a{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.gallery-nav svg {
+  height: 30px;
+  width: 30px;
+}
+.active {
+  color: rgb(255, 0, 93);
+}
