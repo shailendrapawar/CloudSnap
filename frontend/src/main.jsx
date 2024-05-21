@@ -8,12 +8,14 @@ import Home from './components/home/Home.jsx';
 import Gallery from './components/gallery/Gallery.jsx';
 import Upload from './components/upload/Upload.jsx';
 import UserProfile from './components/UserProfile.jsx/UserProfile.jsx';
+import Favourites from './components/gallery/Favourites.jsx';
 
 const myRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />}></Route>
       <Route path='gallery' element={<Gallery/>} />
+      <Route path='gallery/favourites' element={<Favourites/>} />
       <Route path='upload' element={<Upload/>}/>
       <Route path='/userProfile' element={<UserProfile/>}/>
     </Route>
