@@ -16,7 +16,7 @@ const myRouter = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />}></Route>
 
-      <Route path='gallery/' element={<Gallery />}>
+      <Route path='gallery' element={<Gallery />}>
         <Route path='' element={<AllPhotos/>} />
         <Route path='favourites' element={<Favourites />} />
       </Route>
