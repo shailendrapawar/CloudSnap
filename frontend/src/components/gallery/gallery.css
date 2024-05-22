@@ -3,10 +3,11 @@ height: 91vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: rgb(167, 167, 167);
 }
 .gallery-block{
-    width: 90%;
-    background-color: white;
+    width: 95%;
+    background-color: transparent;
     height: 95%;
     position: relative;
 }
@@ -33,7 +34,7 @@ width: 30px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     overflow-y: scroll;
     padding-top: 10px;
@@ -46,6 +47,10 @@ width: 30px;
     max-height: 280px;
     min-width: 290px;
     min-height: 100px;
+    overflow: hidden;
+    filter: drop-shadow(6px 6px 5px black);
+    cursor: pointer;
+    border: 1px solid white;
 }
 .allPhoto-body::-webkit-scrollbar{
     display: none;
@@ -56,11 +61,12 @@ width: 30px;
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
+    filter:brightness(70%);
 }
 
 .fav-icon{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 0px;   
     width: 60px;
     height: 35px;
@@ -69,13 +75,17 @@ width: 30px;
     background-color: white;
     border-top-right-radius: 15px;
 }
+.fav-icon:hover > svg{
+    transform: scale(1.15   );
+}
 .fav-icon  svg{
     width: 80%;
     height: 80%;
+    transition: 0.1s ease-in-out;
 }
 .delete-icon{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     right: 0px;
     width: 60px;
     height: 35px;
@@ -83,7 +93,11 @@ width: 30px;
     place-items: center;
     background-color: white;
     border-top-left-radius: 15px;
-    
+    border: 1px solid white;
+}
+
+.delete-icon:hover > svg{
+    transform: scale(1.15);
 }
 .delete-icon  svg{
     position: absolute;

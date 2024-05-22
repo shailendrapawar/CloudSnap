@@ -53,6 +53,7 @@ const AllPhotos = () => {
 
   return (
     <div className='relative allPhoto-body'>
+
       {photos.map((v,i) => {
 
         return <div className='photo-item relative' key={i}>
