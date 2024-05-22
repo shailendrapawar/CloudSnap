@@ -19,6 +19,7 @@ const myRouter = createBrowserRouter(
       <Route path='gallery' element={<Gallery />}>
         <Route path='' element={<AllPhotos/>} />
         <Route path='favourites' element={<Favourites />} />
+        {/* <Route path='upload' element={<Upload/>} /> */}
       </Route>
 
       <Route path='upload' element={<Upload />} />

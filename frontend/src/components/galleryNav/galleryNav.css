@@ -1,11 +1,10 @@
 .gallery-nav {
-  background-color: transparent;
-  filter: blur(2px);
+  background-color: #00334eb1;
   color: white;
   width: 60px;
   height: 90%;
   position: absolute;
-  right: 0px;
+  right: 10px;
   top: 25px;
   z-index: 2;
   border-radius: 15px;
@@ -22,10 +21,6 @@
 .gallery-nav svg {
   height: 30px;
   width: 30px;
-}
-.activeClass {
-  color: rgb(255, 0, 93);
-  text-decoration: none;  
 }
 .none{
     color: white;
