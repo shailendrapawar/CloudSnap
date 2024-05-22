@@ -1,5 +1,6 @@
 .gallery-nav {
-  background-color: #00334e;
+  background-color: transparent;
+  filter: blur(2px);
   color: white;
   width: 60px;
   height: 90%;
