@@ -1,6 +1,6 @@
 .gallery-body{
-height: 92vh;
-background-color:aqua;
+height: 91vh;
+/* background-color:aqua; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -28,4 +28,29 @@ align-items: center;
 .gallery-nav svg{
 height: 30px;
 width: 30px;
+}
+
+.allPhoto-body{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-y: scroll;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.allPhoto-body::-webkit-scrollbar{
+    display: none;
+}
+.allPhoto-body img{
+    height:40%;
+    width:50%;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 250px;
+    min-height: 100px;
+    aspect-ratio: 1;
+    object-fit: cover;
+
 }
