@@ -48,9 +48,6 @@ const AllPhotos = () => {
     }
   ]
 
-
-  console.log(photos)
-
   return (
     <div className='relative allPhoto-body'>
 
