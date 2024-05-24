@@ -49,15 +49,15 @@ const AllPhotos = () => {
   ]
 
   return (
-    <div className='relative allPhoto-body'>
+    <div className='relative allPhoto-body  flex flex-wrap gap-7 justify-center overflow-y-scroll pt-2.5 pb-2.5'>
 
       {photos.map((v,i) => {
 
-        return <div className='photo-item relative' key={i}>
-          <img src={v.src} className='' >
+        return <div className='photo-item relative overflow-hidden cursor-pointer' key={i}>
+          <img src={v.src} className=' object-cover' >
           </img>
-          <i className='delete-icon'><MdDelete/></i>
-          <i className='fav-icon'>{v.isFav?<AiFillHeart color='red'/>:<AiOutlineHeart  color='red'/>}</i>
+          <i className='delete-icon absolute bottom-0 right-0 h-8 grid items-center bg-white '><MdDelete/></i>
+          <i className='fav-icon absolute bottom-0 left-0 grid items-center bg-white '>{v.isFav?<AiFillHeart color='red'/>:<AiOutlineHeart  color='red'/>}</i>
 
           </div>
 
