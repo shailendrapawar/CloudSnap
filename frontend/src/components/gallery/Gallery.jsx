@@ -7,8 +7,8 @@ import GalleryNav from '../galleryNav/GalleryNav'
 const Gallery = () => {
 
   return (
-    <main className='gallery-body'>
-      <div className='gallery-block'>
+    <main className='gallery-body flex justify-center items-center'>
+      <div className='gallery-block bg-transparent relative'>
         <GalleryNav />
         <Outlet />
       </div>
