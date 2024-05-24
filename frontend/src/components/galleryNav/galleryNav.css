@@ -1,17 +1,10 @@
 .gallery-nav {
-  background-color: #00334eb1;
-  color: white;
   width: 60px;
   height: 90%;
-  position: absolute;
   right: 10px;
   top: 25px;
   z-index: 2;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .gallery-nav a{
     width: 100%;
@@ -31,19 +24,17 @@
 
 @media  screen and  (max-width:480px){
 .gallery-nav{
-  background-color: #00334ed5;
-  color: white;
+
+
   width: 100%;
   height: 50px;
-  position: absolute;
   top: 90%;
   right: inherit;
   z-index: 2;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+
 
 }
 }
