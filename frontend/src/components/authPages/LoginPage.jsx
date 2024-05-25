@@ -2,7 +2,13 @@ import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <div className='login-page'>
+    <main className='login-body'>
+    <section className='login-left'>left</section>
+    <section className='login-right'>right</section>
+    </main>
+
+    </div>
   )
 }
 

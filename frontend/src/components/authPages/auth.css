@@ -1,0 +1,49 @@
+.login-page,.register-page{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-body,.register-body{
+    width: 90%;
+    max-width: 800px;
+    height: 60%;
+    display: flex;
+}
+.login-body section,.register-body section{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
