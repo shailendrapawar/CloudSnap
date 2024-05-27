@@ -5,12 +5,14 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
 import { AiOutlineUnlock } from "react-icons/ai";
-
+import { Link } from "react-router-dom"
 const RegisterPage = () => {
     return (
         <div className='register-page'>
             <main className='register-body'>
-                <section className='register-left'></section>
+                <section className='register-left'>
+                    <p className='login-link'>already a user <b>Login instead</b>?</p>
+                </section>
                 <section className='register-right'>
                 <h1>Sign up</h1>
                 <p>please enter the below details</p>
@@ -26,6 +28,8 @@ const RegisterPage = () => {
                         </aside>
                         <span className='error-msg text-center'>error msg</span>
                         <button className='signup-btn'>Sign up</button>
+                        <Link className='login-btn'>login instead ?</Link>
+                        
                     </form>
                 </section>
             </main>

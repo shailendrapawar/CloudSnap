@@ -10,7 +10,7 @@
     max-width: 800px;
     height: 60%;
     display: flex;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 0px 30px 0px 30px;
     overflow: hidden;
 }
 .login-body section{
@@ -18,14 +18,13 @@
 }
 .register-body{
     background-color: white;
-    gap: 10px;
+    gap: 20px;
 }
 .register-right{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    background-color: #f4f1f1;
 }
 .register-right h1{
     font-size: 2rem;
@@ -102,12 +101,80 @@ border: 2px solid rgb(0, 128, 255) ;
     background-repeat: no-repeat;
     background-position: center;
     width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.login-link{
+    align-self: flex-end;
+}
+.login-link b{
+    color: rgb(0, 106, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.login-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    text-decoration: underline;
+    color: blue;
+    width: auto;
+    display: none;
+
 }
 
+@media screen and (max-width:400px){
+ .register-body{
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    gap: 0px;
 
+ }   
+ .register-left{
+    width: 100%;
+    height: auto;
+    height: 150px;
+ }
 
+ .register-left p{
+    bottom: 0px;
+    display: none;
+ }
+ .register-right{
+    width: 100%;
+    height: 400px;
+    /* gap: 5px; */
 
+ }
+ .login-btn{
+    display: block;
+ }
+}
 
+@media (min-width:401px) and (max-width:650px){
+
+    .register-body{
+        flex-direction: column;
+        height: auto;
+    }
+    .register-left{
+        width: 100%;
+        height: 200px;
+    }
+    .register-right{
+        width: 100%;
+        height: 380px;
+    }
+    .login-link{
+        display: none;
+    }
+    .login-btn{
+        display: block;
+    }
+}
 
 
 
