@@ -1,220 +1,250 @@
-.login-page,.register-page{
-    height: 100vh;
-    background-color:rgba(0, 170, 255, 0.218);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login-page,
+.register-page {
+  height: 100vh;
+  background-color: rgba(0, 170, 255, 0.218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.login-body,.register-body{
-    width: 90%;
-    max-width: 800px;
-    height: 60%;
-    display: flex;
-    border-radius: 0px 30px 0px 30px;
-    overflow: hidden;
+.login-body,
+.register-body {
+  width: 90%;
+  max-width: 800px;
+  height: 60%;
+  display: flex;
+  border-radius: 0px 30px 0px 30px;
+  overflow: hidden;
 }
-.login-body section{
-    width: 50%;
+.login-body section {
+  width: 50%;
 }
-.register-body{
-    background-color: white;
-    gap: 20px;
+.register-body {
+  background-color: white;
+  gap: 20px;
 }
-.register-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
+.register-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
 }
-.register-right h1{
-    font-size: 2rem;
-    padding-left: 10px;
-    color: rgb(0, 132, 255);
-    margin-top: 10px;
-    font-weight: 600;
+.register-right h1 {
+  font-size: 2rem;
+  padding-left: 10px;
+  color: rgb(0, 132, 255);
+  margin-top: 10px;
+  font-weight: 600;
 }
-.register-right p{
-    font-size: 0.9rem;
-    padding-left: 15px;
-    color: grey;
+.register-right p {
+  font-size: 0.9rem;
+  padding-left: 15px;
+  color: grey;
 }
-.register-form{
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 10px;
-    padding-right: 10px;    
-    position: relative;
-}
-
-.register-form div{
-    height: 40px;
-    display: flex;
-    border-radius: 5px;
-    overflow: hidden;   
-}
-.register-form div i{
-    width: 15%;
-    background-color: rgb(0, 140, 255);
-    padding: 10px;
-    color: white;
-}
-.register-form div i svg{
-    height: 100%;
-    width: 100%;
-}
-.register-form div input{
-    height: 100%;
-    width: 85%;
-    outline: none;
-    padding-left: 10px;
-    font-size: 0.9rem;
-}
-.gender-div{
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.gender-div input{
-    height: 15px;
-    width: 15px;
-}
-.error-msg{
-    font-size: 0.9rem;
-    color: grey;
-}
-.signup-btn{
-background-color: rgb(0, 128, 255);
-width: 120px;
-height: 35px;
-align-self: flex-end;
-border-radius: 10px;
-color: white;
-border: 2px solid rgb(0, 128, 255) ;
-
-}
-.register-left{
-    background-image: url('./register-image.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-.login-link{
-    align-self: flex-end;
-}
-.login-link b{
-    color: rgb(0, 106, 255);
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 0.8rem;
-}
-.login-btn{
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    text-decoration: underline;
-    color: blue;
-    width: auto;
-    display: none;
-
+.register-form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
 }
 
-@media screen and (max-width:400px){
- .register-body{
+.register-form div {
+  height: 40px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.register-form div i {
+  width: 15%;
+  background-color: rgb(0, 140, 255);
+  padding: 10px;
+  color: white;
+}
+.register-form div i svg {
+  height: 100%;
+  width: 100%;
+}
+.register-form div input {
+  height: 100%;
+  width: 85%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+.gender-div {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gender-div input {
+  height: 15px;
+  width: 15px;
+}
+.error-msg {
+  font-size: 0.9rem;
+  color: grey;
+}
+.signup-btn {
+  background-color: rgb(0, 128, 255);
+  width: 120px;
+  height: 35px;
+  align-self: flex-end;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid rgb(0, 128, 255);
+}
+.register-left {
+  background-image: url("./register-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.login-link {
+  align-self: flex-end;
+}
+.login-link b {
+  color: rgb(0, 106, 255);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.login-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  text-decoration: underline;
+  color: blue;
+  width: auto;
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .register-body {
     flex-direction: column;
     height: auto;
     width: 95%;
     gap: 0px;
-
- }   
- .register-left{
+  }
+  .register-left {
     width: 100%;
     height: auto;
     height: 150px;
- }
+  }
 
- .register-left p{
+  .register-left p {
     bottom: 0px;
     display: none;
- }
- .register-right{
+  }
+  .register-right {
     width: 100%;
     height: 400px;
     /* gap: 5px; */
-
- }
- .login-btn{
+  }
+  .login-btn {
     display: block;
- }
+  }
 }
 
-@media (min-width:401px) and (max-width:650px){
-
-    .register-body{
-        flex-direction: column;
-        height: auto;
-    }
-    .register-left{
-        width: 100%;
-        height: 200px;
-    }
-    .register-right{
-        width: 100%;
-        height: 380px;
-    }
-    .login-link{
-        display: none;
-    }
-    .login-btn{
-        display: block;
-    }
+@media (min-width: 401px) and (max-width: 650px) {
+  .register-body {
+    flex-direction: column;
+    height: auto;
+  }
+  .register-left {
+    width: 100%;
+    height: 200px;
+  }
+  .register-right {
+    width: 100%;
+    height: 380px;
+  }
+  .login-link {
+    display: none;
+  }
+  .login-btn {
+    display: block;
+  }
 }
-
-
 
 /*===============login page==================================*/
 
-.login-body{
+.login-body {
+}
+.login-left {
+  background-image: url("./login-illustration.svg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  position: relative;
+}
+.login-left p {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.login-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-right h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(0, 94, 255);
+    margin-top: 20px;
+}
+.login-right p{
+    font-size: 0.8rem;
+    color: grey;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+padding-left: 10px;
+padding-right: 10px;
+  justify-content: center;
+  position: relative;
+  height: 70%;
+}
 
+.login-form div {
+  height: 40px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.login-left{
-    background-image: url("./login-illustration.svg");
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-position: center;
-    position: relative;
+.login-form div i {
+  width: 15%;
+  background-color: rgb(0, 140, 255);
+  padding: 10px;
+  color: white;
 }
-.login-left p{
+.login-form div i svg {
+  height: 100%;
+  width: 100%;
+}
+.login-form div input {
+  height: 100%;
+  width: 85%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+.loginPage-btn{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(0, 102, 255);
+    color: white;
     position: absolute;
-    bottom: 10px;
-    left: 20px;
-
+    bottom: 0px;
+    right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

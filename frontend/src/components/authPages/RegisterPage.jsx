@@ -5,13 +5,14 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
 import { AiOutlineUnlock } from "react-icons/ai";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 const RegisterPage = () => {
+    const navigate=useNavigate()
     return (
         <div className='register-page'>
             <main className='register-body'>
                 <section className='register-left'>
-                    <p className='login-link'>already a user <b>Login instead</b>?</p>
+                    <p className='login-link'>already a user <b onClick={()=>navigate("/login")}>Login instead</b>?</p>
                 </section>
                 <section className='register-right'>
                 <h1>Sign up</h1>
