@@ -178,6 +178,26 @@ border: 2px solid rgb(0, 128, 255) ;
 
 
 
+/*===============login page==================================*/
+
+.login-body{
+
+}
+.login-left{
+    background-image: url("./login-illustration.svg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    position: relative;
+}
+.login-left p{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+
+}
+
+
 
 
 
