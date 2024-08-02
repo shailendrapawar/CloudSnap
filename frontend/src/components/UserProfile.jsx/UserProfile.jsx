@@ -1,5 +1,5 @@
 import React from 'react'
-import './userProfile.css'
+import './UserProfile.css'
 const UserProfile = () => {
   return (
     <main className='user-body flex items-center justify-center bg-[#8e9eab]'>
