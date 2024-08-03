@@ -51,7 +51,6 @@ const RegisterPage = () => {
     }
 
 
-
     return (
         <div className='register-page'>
             <main className='register-body'>

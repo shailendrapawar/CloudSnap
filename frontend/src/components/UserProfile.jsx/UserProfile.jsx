@@ -1,6 +1,46 @@
 import React from 'react'
 import './UserProfile.css'
+import { useNavigate } from "react-router-dom"
+import axios from "axios";
+
 const UserProfile = () => {
+
+  const navigate = useNavigate();
+
+  const [name, setName] = React.useState("--")
+  const [email, setEmail] = React.useState("--")
+  const [number, setNumber] = React.useState("--")
+
+
+
+  const fetchUserData = async (userId) => {
+    const isUser = await axios.get(import.meta.env.VITE_API_URL + `/getUser/${userId}`)
+  
+    if (isUser.data.status == 200) {
+      setName(isUser.data.data.name)
+      setEmail(isUser.data.data.email)
+      setNumber(isUser.data.data.number)
+    } else if (userData.data.data == []) {
+      navigate("/login")
+    }
+    else {
+      navigate("/login")
+    }
+  }
+
+
+  React.useEffect(() => {
+
+    const userId = localStorage.getItem(import.meta.env.VITE_LOCAL_KEY);
+
+    if (userId == null) {
+      navigate("/login")
+    } else {
+      let userId = localStorage.getItem(import.meta.env.VITE_LOCAL_KEY)
+      fetchUserData(userId);
+    }
+  }, [])
+
   return (
     <main className='user-body flex items-center justify-center bg-[#8e9eab]'>
 
@@ -21,7 +61,13 @@ const UserProfile = () => {
             <span className='credits-body  text-white bg-[#e32f7a]'><label>Credits Used:</label><b>8%</b></span>
           </section>
 
-          <button className='logout-btn bg-[#ffd600] rounded-md'>Sign Out</button>
+          <button onClick={(e) => {
+            e.preventDefault();
+            navigate("/login")
+            localStorage.removeItem(import.meta.VITE_LOCAL_KEY);
+
+
+          }} className='logout-btn bg-[#ffd600] rounded-md'>Sign Out</button>
 
         </div>
 
@@ -29,25 +75,17 @@ const UserProfile = () => {
           <h1>Account Info</h1>
 
           <div className='name-body'>
-            <label>Name:</label><span>shailendra pawar</span>
+            <label>Name:</label><span>{name}</span>
           </div>
 
           <div className='email-body'>
-            <label>Email:</label><span>shailendrapawar980@gmail.com</span>
+            <label>Email:</label><span>{email}</span>
           </div>
 
-          <div className='gender-age-body flex gap-7'>
-            <section>
-              <label>Gender:</label><span >Male</span>
-            </section>
 
-            <section>
-              <label>Age:</label><span>18</span>
-            </section>
-          </div>
 
           <div className='mobileNo-body '>
-            <label>Mobile no:</label><span>7456920792</span>
+            <label>Mobile no:</label><span>{number}</span>
           </div>
 
           <button className='bg-[#222831] text-white rounded-md h-10'>Update Credentials</button>
